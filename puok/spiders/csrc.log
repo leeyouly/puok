@@ -1,0 +1,254 @@
+Microsoft Windows [版本 10.0.15063]
+(c) 2017 Microsoft Corporation。保留所有权利。
+
+D:\spider\puok\puok\spiders>scrapy crawl spd_t_puok_csrc -o csrc.csv
+2018-02-08 14:10:09 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: puok)
+2018-02-08 14:10:09 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'puok.spiders', 'FEED_URI': 'csrc.csv', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['puok.spiders'], 'BOT_NAME': 'puok', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36', 'FEED_FORMAT': 'csv', 'DOWNLOAD_DELAY': 2.5}
+2018-02-08 14:10:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'spiderlib.extensions.WriteEtlLog']
+2018-02-08 14:10:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-08 14:10:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'spiderlib.middlewares.IndexPageSaveMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-08 14:10:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['puok.pipelines.Puok_chinaisaSortpricePipleline',
+ 'puok.pipelines.Puok_chinaisaPartpricePipleline',
+ 'puok.pipelines.Puok_GangguPipleline',
+ 'puok.pipelines.Puok_mepPipleline',
+ 'puok.pipelines.Puok_tradeNoticePipleline',
+ 'puok.pipelines.Puok_csrcPipleline',
+ 'puok.pipelines.Puok_ndrcPipleline',
+ 'puok.pipelines.Puok_SteelPipleline',
+ 'puok.pipelines.Puok_chinaisaPipleline',
+ 'puok.pipelines.Puok_mohurdPipleline',
+ 'puok.pipelines.Puok_neaPipleline']
+2018-02-08 14:10:10 [scrapy.core.engine] INFO: Spider opened
+2018-02-08 14:10:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-08 14:10:10 [spiderlib.extensions] INFO: opened spider spd_t_puok_csrc
+2018-02-08 14:11:10 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 19 pages/min), scraped 1 items (at 1 items/min)
+2018-02-08 14:11:35 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force
+2018-02-08 14:11:35 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-02-08 14:11:35 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>sqlplus stg/stg123@aliyun
+
+SQL*Plus: Release 11.2.0.1.0 Production on 星期四 2月 8 14:16:01 2018
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+
+连接到:
+Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+SQL> exit
+从 Oracle Database 11g Enterprise Edition Release 11.2.0.4.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options 断开
+
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>
+D:\spider\puok\puok\spiders>scrapy crawl spd_t_puok_csrc -o csrc.csv
+2018-02-08 14:16:19 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: puok)
+2018-02-08 14:16:19 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'puok.spiders', 'FEED_URI': 'csrc.csv', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['puok.spiders'], 'BOT_NAME': 'puok', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36', 'FEED_FORMAT': 'csv', 'DOWNLOAD_DELAY': 2.5}
+2018-02-08 14:16:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'spiderlib.extensions.WriteEtlLog']
+2018-02-08 14:16:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-02-08 14:16:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'spiderlib.middlewares.IndexPageSaveMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-02-08 14:16:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['puok.pipelines.Puok_chinaisaSortpricePipleline',
+ 'puok.pipelines.Puok_chinaisaPartpricePipleline',
+ 'puok.pipelines.Puok_GangguPipleline',
+ 'puok.pipelines.Puok_mepPipleline',
+ 'puok.pipelines.Puok_tradeNoticePipleline',
+ 'puok.pipelines.Puok_csrcPipleline',
+ 'puok.pipelines.Puok_ndrcPipleline',
+ 'puok.pipelines.Puok_SteelPipleline',
+ 'puok.pipelines.Puok_chinaisaPipleline',
+ 'puok.pipelines.Puok_mohurdPipleline',
+ 'puok.pipelines.Puok_neaPipleline']
+2018-02-08 14:16:20 [scrapy.core.engine] INFO: Spider opened
+2018-02-08 14:16:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-02-08 14:16:20 [spiderlib.extensions] INFO: opened spider spd_t_puok_csrc
+2018-02-08 14:17:20 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 19 pages/min), scraped 1 items (at 1 items/min)
+2018-02-08 14:18:20 [scrapy.extensions.logstats] INFO: Crawled 38 pages (at 19 pages/min), scraped 20 items (at 19 items/min)
+pdf第 1 次打印
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201308/t20130809_232380.html
+2018-02-08 14:19:20 [scrapy.extensions.logstats] INFO: Crawled 56 pages (at 18 pages/min), scraped 37 items (at 17 items/min)
+2018-02-08 14:20:20 [scrapy.extensions.logstats] INFO: Crawled 75 pages (at 19 pages/min), scraped 56 items (at 19 items/min)
+2018-02-08 14:21:20 [scrapy.extensions.logstats] INFO: Crawled 95 pages (at 20 pages/min), scraped 75 items (at 19 items/min)
+2018-02-08 14:22:20 [scrapy.extensions.logstats] INFO: Crawled 113 pages (at 18 pages/min), scraped 94 items (at 19 items/min)
+pdf第 2 次打印
+2018-02-08 14:23:20 [scrapy.extensions.logstats] INFO: Crawled 133 pages (at 20 pages/min), scraped 114 items (at 20 items/min)
+2018-02-08 14:24:20 [scrapy.extensions.logstats] INFO: Crawled 153 pages (at 20 pages/min), scraped 134 items (at 20 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201705/t20170505_316214.html
+2018-02-08 14:25:20 [scrapy.extensions.logstats] INFO: Crawled 171 pages (at 18 pages/min), scraped 151 items (at 17 items/min)
+2018-02-08 14:26:20 [scrapy.extensions.logstats] INFO: Crawled 191 pages (at 20 pages/min), scraped 171 items (at 20 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201706/t20170602_317773.html
+2018-02-08 14:27:20 [scrapy.extensions.logstats] INFO: Crawled 210 pages (at 19 pages/min), scraped 188 items (at 17 items/min)
+pdf第 3 次打印
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201707/t20170721_320805.html
+2018-02-08 14:28:24 [scrapy.extensions.logstats] INFO: Crawled 232 pages (at 22 pages/min), scraped 210 items (at 22 items/min)
+2018-02-08 14:29:20 [scrapy.extensions.logstats] INFO: Crawled 249 pages (at 17 pages/min), scraped 227 items (at 17 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201710/t20171012_325262.html
+2018-02-08 14:30:20 [scrapy.extensions.logstats] INFO: Crawled 269 pages (at 20 pages/min), scraped 246 items (at 19 items/min)
+2018-02-08 14:31:20 [scrapy.extensions.logstats] INFO: Crawled 290 pages (at 21 pages/min), scraped 267 items (at 21 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201712/t20171214_328895.html
+2018-02-08 14:32:20 [scrapy.extensions.logstats] INFO: Crawled 307 pages (at 17 pages/min), scraped 283 items (at 16 items/min)
+2018-02-08 14:33:20 [scrapy.extensions.logstats] INFO: Crawled 327 pages (at 20 pages/min), scraped 303 items (at 20 items/min)
+pdf第 4 次打印
+2018-02-08 14:34:20 [scrapy.extensions.logstats] INFO: Crawled 345 pages (at 18 pages/min), scraped 321 items (at 18 items/min)
+2018-02-08 14:35:20 [scrapy.extensions.logstats] INFO: Crawled 363 pages (at 18 pages/min), scraped 334 items (at 13 items/min)
+未找到url,暂停3到5秒重新请求--->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/index_43.html
+未找到url,暂停3到5秒重新请求--->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/index_38.html
+2018-02-08 14:36:20 [scrapy.extensions.logstats] INFO: Crawled 381 pages (at 18 pages/min), scraped 340 items (at 6 items/min)
+pdf第 5 次打印
+2018-02-08 14:37:20 [scrapy.extensions.logstats] INFO: Crawled 401 pages (at 20 pages/min), scraped 360 items (at 20 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201506/t20150605_278566.html
+2018-02-08 14:38:20 [scrapy.extensions.logstats] INFO: Crawled 420 pages (at 19 pages/min), scraped 378 items (at 18 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201502/t20150227_269157.html
+2018-02-08 14:39:20 [scrapy.extensions.logstats] INFO: Crawled 438 pages (at 18 pages/min), scraped 395 items (at 17 items/min)
+pdf第 6 次打印
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150116_266711.html
+2018-02-08 14:40:22 [scrapy.extensions.logstats] INFO: Crawled 456 pages (at 18 pages/min), scraped 412 items (at 17 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150116_266693.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150116_266708.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150119_266810.html
+2018-02-08 14:41:20 [scrapy.extensions.logstats] INFO: Crawled 473 pages (at 17 pages/min), scraped 426 items (at 14 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201412/t20141219_265267.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150109_266343.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201501/t20150109_266364.html
+2018-02-08 14:42:21 [scrapy.extensions.logstats] INFO: Crawled 493 pages (at 20 pages/min), scraped 443 items (at 17 items/min)
+2018-02-08 14:43:20 [scrapy.extensions.logstats] INFO: Crawled 513 pages (at 20 pages/min), scraped 463 items (at 20 items/min)
+2018-02-08 14:44:20 [scrapy.extensions.logstats] INFO: Crawled 532 pages (at 19 pages/min), scraped 482 items (at 19 items/min)
+pdf第 7 次打印
+2018-02-08 14:45:20 [scrapy.extensions.logstats] INFO: Crawled 552 pages (at 20 pages/min), scraped 502 items (at 20 items/min)
+pdf第 8 次打印
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201406/t20140613_256081.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201406/t20140613_256082.html
+2018-02-08 14:46:21 [scrapy.extensions.logstats] INFO: Crawled 571 pages (at 19 pages/min), scraped 519 items (at 17 items/min)
+2018-02-08 14:47:20 [scrapy.extensions.logstats] INFO: Crawled 590 pages (at 19 pages/min), scraped 538 items (at 19 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201402/t20140225_244259.html
+2018-02-08 14:48:20 [scrapy.extensions.logstats] INFO: Crawled 609 pages (at 19 pages/min), scraped 556 items (at 18 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201403/t20140321_245896.html
+2018-02-08 14:49:20 [scrapy.extensions.logstats] INFO: Crawled 628 pages (at 19 pages/min), scraped 574 items (at 18 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201401/t20140128_243377.html
+2018-02-08 14:50:20 [scrapy.extensions.logstats] INFO: Crawled 646 pages (at 18 pages/min), scraped 591 items (at 17 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201312/t20131227_240493.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201401/t20140106_240965.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201401/t20140110_242354.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201401/t20140115_242605.html
+2018-02-08 14:51:20 [scrapy.extensions.logstats] INFO: Crawled 663 pages (at 17 pages/min), scraped 604 items (at 13 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201312/t20131213_239889.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201312/t20131213_239888.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201310/t20131012_236022.html
+2018-02-08 14:52:20 [scrapy.extensions.logstats] INFO: Crawled 681 pages (at 18 pages/min), scraped 619 items (at 15 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201310/t20131018_236544.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201310/t20131025_236889.html
+2018-02-08 14:53:20 [scrapy.extensions.logstats] INFO: Crawled 700 pages (at 19 pages/min), scraped 636 items (at 17 items/min)
+2018-02-08 14:54:20 [scrapy.extensions.logstats] INFO: Crawled 720 pages (at 20 pages/min), scraped 649 items (at 13 items/min)
+pdf第 9 次打印
+2018-02-08 14:55:20 [scrapy.extensions.logstats] INFO: Crawled 738 pages (at 18 pages/min), scraped 658 items (at 9 items/min)
+2018-02-08 14:56:20 [scrapy.extensions.logstats] INFO: Crawled 758 pages (at 20 pages/min), scraped 678 items (at 20 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201609/t20160923_303746.html
+2018-02-08 14:57:20 [scrapy.extensions.logstats] INFO: Crawled 776 pages (at 18 pages/min), scraped 695 items (at 17 items/min)
+2018-02-08 14:58:20 [scrapy.extensions.logstats] INFO: Crawled 795 pages (at 19 pages/min), scraped 714 items (at 19 items/min)
+pdf第 10 次打印
+2018-02-08 14:59:20 [scrapy.extensions.logstats] INFO: Crawled 816 pages (at 21 pages/min), scraped 735 items (at 21 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201608/t20160819_302434.html
+2018-02-08 15:00:20 [scrapy.extensions.logstats] INFO: Crawled 834 pages (at 18 pages/min), scraped 752 items (at 17 items/min)
+2018-02-08 15:01:20 [scrapy.extensions.logstats] INFO: Crawled 853 pages (at 19 pages/min), scraped 771 items (at 19 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201606/t20160606_298293.html
+pdf第 11 次打印
+2018-02-08 15:02:20 [scrapy.extensions.logstats] INFO: Crawled 873 pages (at 20 pages/min), scraped 790 items (at 19 items/min)
+2018-02-08 15:03:20 [scrapy.extensions.logstats] INFO: Crawled 892 pages (at 19 pages/min), scraped 809 items (at 19 items/min)
+pdf第 12 次打印
+pdf第 13 次打印
+pdf第 14 次打印
+pdf第 15 次打印
+2018-02-08 15:04:20 [scrapy.extensions.logstats] INFO: Crawled 912 pages (at 20 pages/min), scraped 829 items (at 20 items/min)
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201602/t20160226_293139.html
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201603/t20160301_293699.html
+2018-02-08 15:05:20 [scrapy.extensions.logstats] INFO: Crawled 931 pages (at 19 pages/min), scraped 846 items (at 17 items/min)
+pdf第 16 次打印
+2018-02-08 15:06:20 [scrapy.extensions.logstats] INFO: Crawled 951 pages (at 20 pages/min), scraped 866 items (at 20 items/min)
+2018-02-08 15:07:20 [scrapy.extensions.logstats] INFO: Crawled 969 pages (at 18 pages/min), scraped 884 items (at 18 items/min)
+pdf第 17 次打印
+2018-02-08 15:08:20 [scrapy.extensions.logstats] INFO: Crawled 989 pages (at 20 pages/min), scraped 904 items (at 20 items/min)
+2018-02-08 15:09:20 [scrapy.extensions.logstats] INFO: Crawled 1011 pages (at 22 pages/min), scraped 925 items (at 21 items/min)
+pdf第 18 次打印
+可能是请求过快，未解析到内容，暂停3到5秒重新请求-->http://www.csrc.gov.cn/pub/newsite/zjhxwfb/xwdd/201507/t20150728_281726.html
+2018-02-08 15:10:27 [scrapy.extensions.logstats] INFO: Crawled 1030 pages (at 19 pages/min), scraped 943 items (at 18 items/min)
+2018-02-08 15:11:40 [scrapy.extensions.logstats] INFO: Crawled 1045 pages (at 15 pages/min), scraped 959 items (at 16 items/min)
+2018-02-08 15:11:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-02-08 15:11:48 [scrapy.extensions.feedexport] INFO: Stored csv feed (963 items) in: csrc.csv
+2018-02-08 15:11:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 438913,
+ 'downloader/request_count': 1049,
+ 'downloader/request_method_count/GET': 1049,
+ 'downloader/response_bytes': 55454101,
+ 'downloader/response_count': 1049,
+ 'downloader/response_status_count/200': 1049,
+ 'dupefilter/filtered': 37,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 2, 8, 7, 11, 48, 964000),
+ 'item_scraped_count': 963,
+ 'log_count/INFO': 64,
+ 'request_depth_max': 3,
+ 'response_received_count': 1049,
+ 'scheduler/dequeued': 1049,
+ 'scheduler/dequeued/memory': 1049,
+ 'scheduler/enqueued': 1049,
+ 'scheduler/enqueued/memory': 1049,
+ 'spiderlog/save_count': 963,
+ 'spiderlog/source_name': u'\u8bc1\u76d1\u4f1a',
+ 'spiderlog/target_tables': ['t_puok_csrc'],
+ 'start_time': datetime.datetime(2018, 2, 8, 6, 16, 20, 112000)}
+2018-02-08 15:11:48 [scrapy.core.engine] INFO: Spider closed (finished)
+
+D:\spider\puok\puok\spiders>
