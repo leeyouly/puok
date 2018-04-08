@@ -142,3 +142,11 @@ class Puok_statsItem(scrapy.Item):
     news_contenturl = scrapy.Field()
     news_imageurl = scrapy.Field()
     update_dt = scrapy.Field()
+
+
+class Puok_jin10Item(scrapy.Item):
+    datadate = scrapy.Field()
+    data_type = scrapy.Field()
+    news_contents = scrapy.Field()
+    pageid = scrapy.Field()
+    update_dt = scrapy.Field()

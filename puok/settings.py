@@ -44,6 +44,7 @@ ITEM_PIPELINES = {
    'puok.pipelines.Puok_cansiPipleline': 300,
    'puok.pipelines.Puok_96369Pipleline': 300,
    'puok.pipelines.Puok_statsPipleline': 300,
+   'puok.pipelines.Puok_jin10Pipleline': 300,
 }
 LOG_LEVEL = 'INFO'
 

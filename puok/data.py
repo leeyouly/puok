@@ -272,3 +272,20 @@ class ImportPuok_statsStorage(DataStorage):
     def save_or_update(self, item):
         self.db.save_or_update(self.table_name, item)
         self.db.commit()
+
+
+class ImportPuok_jin10Storage(DataStorage):
+    def __init__(self, db_url):
+        self.db = self.build_connection(db_url)
+        self.table_name = 'T_PUOK_JIN10'
+        self.db.set_metadata(self.table_name, [
+            PyDB.DateField("datadate", is_key=True),
+            PyDB.IntField("pageid", is_key=True),
+            PyDB.StringField("data_type"),
+            PyDB.StringField("news_contents"),
+            PyDB.DateField("update_dt"),
+        ])
+
+    def save_or_update(self, item):
+        self.db.save_or_update(self.table_name, item)
+        self.db.commit()

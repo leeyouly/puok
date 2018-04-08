@@ -7,10 +7,10 @@
 from puok.data import ImportPuok_SteelStorage,ImportPuok_GangguStorage,ImportPuok_ndrcStorage,\
     ImportPuok_mepStorage,ImportPuok_chinaisaStorage,ImportPuok_mohurdStorage,ImportPuok_tradeNoticeStorage,\
     ImportPuok_chinaisaSortpriceStorage, ImportPuok_chinaisaPartpriceStorage,ImportPuok_neaStorage,ImportPuok_csrcStorage,\
-    ImportPuok_cansiStorage,ImportPuok_96369Storage,ImportPuok_statsStorage
+    ImportPuok_cansiStorage,ImportPuok_96369Storage,ImportPuok_statsStorage,ImportPuok_jin10Storage
 from puok.items import Puok_SteelItem,Puok_GangguItem,Puok_ndrcItem,Puok_mepItem,Puok_chinaisaItem,\
     Puok_mohurdItem,Puok_tradeNoticeItem,Puok_chinaisaSortpriceItem,Puok_chinaisaPartpriceItem,Puok_neaItem,Puok_csrcItem,\
-    Puok_cansiItem,Puok_96369Item,Puok_statsItem
+    Puok_cansiItem,Puok_96369Item,Puok_statsItem,Puok_jin10Item
 from scrapy.utils.project import get_project_settings
 
 class PuokPipeline(object):
@@ -188,6 +188,18 @@ class Puok_statsPipleline(object):
 
     def process_item(self, item, spider):
         if isinstance(item, Puok_statsItem):
+            # if not self.storage.exist(item):
+                self.storage.save_or_update(item)
+                spider.crawler.stats.inc_value('spiderlog/save_count')
+
+        return item
+
+class Puok_jin10Pipleline(object):
+    def __init__(self):
+        self.storage = ImportPuok_jin10Storage(get_project_settings().get('DATABASE'))
+
+    def process_item(self, item, spider):
+        if isinstance(item, Puok_jin10Item):
             # if not self.storage.exist(item):
                 self.storage.save_or_update(item)
                 spider.crawler.stats.inc_value('spiderlog/save_count')
